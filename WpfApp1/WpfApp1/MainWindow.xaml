@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="87*"/>
+            <ColumnDefinition Width="713*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="btnStart" Grid.Column="1" Content="Start" HorizontalAlignment="Left" Height="60" 
+                Margin="75,50,0,0" VerticalAlignment="Top" Width="135" Click="btnStart_Click" 
+                FontFamily="Times New Roman" FontWeight="Bold" FontSize="26.667" 
+                Background="#FFE6FF00" BorderBrush="#FFFF0303" Foreground="#FF3CBBF1" IsEnabled="False"/>
+
+        <Button x:Name="btnTime" Grid.Column="1" Content="Czas" HorizontalAlignment="Left" Height="60" 
+                Margin="75,150,0,0" VerticalAlignment="Top" Width="135" 
+                FontFamily="Times New Roman" FontWeight="Bold" FontSize="26.667" 
+                MouseEnter="btnTime_MouseEnter" MouseLeave="btnTime_MouseLeave"/>
+
+        <Button x:Name="btnActivateStart" Grid.Column="1" Content="Aktywuj Start" HorizontalAlignment="Left" 
+                Height="60" Margin="75,250,0,0" VerticalAlignment="Top" Width="135" 
+                Click="btnActivateStart_Click" FontFamily="Times New Roman" FontWeight="Bold" FontSize="20" 
+                Background="#FF85C085" BorderBrush="Green" Foreground="White"/>
+    </Grid>
+</Window>
